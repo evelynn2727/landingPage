@@ -1,0 +1,1035 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+/* header */
+
+header{
+    height: 100vh; 
+    width: 100%;
+    background-color: #AEE1FF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+header img{
+    position: absolute;
+    bottom: 0;
+    right: -40%;
+    height: 70vh;   
+}
+header nav{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 3rem;
+}
+
+header hgroup{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 3.6rem;
+}
+
+header h3{
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    border: 3px solid black;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0px -15px 0 black, 0px -30px 0 black;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.arrow:hover{
+     text-shadow: 0px -15px 0 white, 0px -30px 0 white;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.fa-angle-down{
+    animation: arrow 1.4s infinite linear;
+}
+/* koniec header*/
+
+/* main */
+
+
+main article#autor{
+   height: 100vh;  
+   background-color: rgba(251,206,227,204); 
+   margin-top: 100vh;
+   z-index: 2;
+   position: relative;
+}
+
+main article#autor img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 40vh; 
+}
+main article#autor section{
+    position: absolute;
+    bottom: 17%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main article#autor section h3{
+    font-size: 3.8rem;
+}
+
+main article#autor section p{
+    font-size: 2rem;
+    margin: 25px;
+}
+/* koniec main */
+
+/* article technologie */
+
+article#tech{
+   height: 100vh; 
+   background-color: #AEE1FF;
+   z-index: 3;
+   position: relative; 
+}
+
+article#tech section{
+    align-items: center;
+   z-index: 3;
+}
+
+article#tech section h3{
+    font-size: 3rem;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+#html5{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 90px;
+}
+
+#js{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 80px;
+}
+
+#css3{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 80px;
+}
+
+#boot{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 100px;
+}
+
+#jq{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 35px;
+    margin-top: 20px;
+   // bottom: 24%;
+}
+
+#sass{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 70px;
+}
+
+.box, .box2{
+/*
+    padding: 0px 0px 70px 0px;
+    margin: 6%;
+*/
+    
+    width: 100px;
+    height: 90px;
+}
+/* koniec article */
+
+/* article programowanie */
+
+article#prog{
+   height: 100vh; 
+   background-color: rgba(251,206,227,204); 
+   z-index: 4;
+   position: relative; 
+}
+
+article#prog section{
+    align-items: center;
+   z-index: 4;
+}
+
+article#prog section h3{
+    font-size: 6rem;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+#cpp{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 80px;
+}
+
+#java{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 80px;
+}
+
+#php{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 100px;
+}
+
+#mysql{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 90px;
+}
+
+#oracle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+   // bottom: 24%;
+}
+
+#python{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+}
+
+
+/* koneic article */
+
+/* ------------------------------- */
+
+/* media queries */
+@media (orientation: portrait){
+    h3 span::after{
+        content: '\A';
+        white-space: pre;
+    }
+}
+@media (orientation: landscape){
+    header img{
+    right: 0;
+    height: 60vh;   
+ }
+    
+    #html5{
+    height:230px;
+    float: left;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#js{
+    height: 200px;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+   margin: 0% 3%;
+}
+
+#css3{
+    height: 200px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#boot{
+    height: 200px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#jq{
+    height: 100px;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#sass{
+    height: 180px;
+    left: auto;
+     margin: 0% 7%;
+    
+} 
+.box{
+    padding: 0px;
+    margin: 7%;
+    width: 80px;
+    height: 80px;
+    display: ;
+ }
+    .box2{
+    padding: px;
+    margin: 0% 6%;
+    width: 150px;
+    height: 80px;
+    display: ;
+ }
+    .container{
+        float: left;
+        display: inline-flex;
+        width: 100%;
+        height: 150px;
+        position: relative;
+        margin-bottom: 250px;
+    }
+    
+    .container2, .container4{
+        float: left;
+        display: inline-flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3{
+       float: left;
+        display: inline-flex;
+        width: 100%;
+        height: 150px;
+        position: relative;
+        margin-bottom: 150px; 
+    }
+
+}
+@media (min-width: 340px){
+    header img{
+        height: 65%;
+        right: -47%;
+    }
+    h3 span::after{
+        content: '\A';
+        white-space: pre;
+    }
+      main article#autor section h3{
+    font-size: 2.4rem;
+    top: -15px;
+    position: relative;
+}
+
+        
+    header h3{
+        font-size: 2.4rem;
+    }
+    header h1{
+        font-size: 3.5rem;
+    }
+main article#autor section p{
+    font-size: 2rem;
+    margin: 10px;
+    top: -10px;
+    position: relative;
+ }
+    main article#autor img{
+    height: 35vh; 
+ }
+    main article#autor section h3{
+        font-size: 3.8rem;
+    }
+    #jq{
+         height: 25px;
+    }
+    #sass{
+        height: 50px;
+    }
+    
+    #html5{
+    height: 70px;
+}
+
+    #js{
+        height: 60px;
+    }
+
+    #css3{
+        height: 60px;
+    }
+
+    #boot{
+        height: 60px;
+    }
+
+    
+    }
+    #cpp{
+    height: 80px;
+    }
+
+    #java{
+        height: 70px;
+    }
+
+    #php{
+        height: 90px;
+    }
+
+    #mysql{
+        height: 80px;
+    }
+
+    #oracle{
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    #python{
+        height: 60px;
+        margin-top: 0px;
+    }
+
+ 
+}
+
+@media (min-width: 530px){
+    header img{
+        height: 75%;
+        right: -2%;
+    }
+    header h1{
+        font-size: 5rem;
+    }
+    header h3{
+        font-size: 2rem;
+    }
+    header hgroup{
+        top: 10%;
+    }
+    
+    /* main */
+    
+    .arrow{
+        width:58px;
+        height: 58px;
+        font-size: 5.5rem;
+    }
+ 
+
+main article#autor section{
+    position: absolute;
+    top: 38%;
+    text-align: center;
+}
+
+main article#autor section h3{
+    font-size: 2.4rem;
+    margin-left: 25px;
+}
+
+main article#autor section p{
+    font-size: 1rem;
+    margin: 0px 25px;
+    width: 90%;
+ }
+}
+
+@media (min-width: 530px)and(orientation: portrait){
+  header img{
+        height: 20%;
+        right: -7%;
+    }
+     main article#autor img{
+   top: 1%;
+ }  
+
+main article#autor section{
+    position: absolute;
+    top: 38%;
+    text-align: center;
+}
+
+main article#autor section h3{
+    font-size: 2.4rem;
+    margin-left: 25px;
+}
+
+main article#autor section p{
+    font-size: 1.7rem;
+    margin: 0px 25px;
+    width: 90%;
+ }
+}
+
+@media (min-width: 630px){
+    
+    main article#autor section h3{
+    font-size: 3.5rem;
+    margin-left: 25px;
+}
+
+main article#autor section p{
+    font-size: 1.8rem;
+    margin: 0px 25px;
+    width: 90%;
+ }
+    
+.box{
+
+    width: 130px;
+    height: 130px;
+}
+    
+article#tech section h3{
+    font-size: 3.3rem;
+    text-align: center;
+}
+    .arrow{
+        width: 48px;
+        height: 48px;
+        font-size: 5rem;
+    }
+ 
+    
+}
+
+@media (min-width: 768px){
+       header img{
+        height: 65%;
+        right: -22%;
+    }
+        header h1{
+        font-size: 8rem;
+    }
+    header h3{
+        font-size: 4.4rem;
+    }
+    header hgroup{
+        top: 8%;
+    }
+    
+
+
+main article#autor img{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    height: 40vh; 
+}
+main article#autor section{
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    top: 40%;
+}
+
+main article#autor section h3{
+    font-size: 7rem;
+}
+
+main article#autor section p{
+    font-size: 3rem;
+    margin: 30px;
+    width: 90%;
+}
+
+.box,.box2{
+    width: 140px;
+    height: 140px;
+    padding: 40px;
+    
+}
+#html5{
+    height:140px; 
+}
+
+#js{
+    height: 120px;
+}
+
+#css3{
+    height: 120px;
+}
+
+#boot{
+    height: 120px;
+}
+
+#jq{
+    height: 50px; 
+    margin-top: 50px;
+}
+
+#sass{
+    height: 100px;
+ } 
+    
+}
+
+@media (min-width: 1024px){
+    header img{
+        height: 70%;
+        right: -8%;
+    }
+    header h1{
+        font-size: 8rem;
+    }
+    header h3{
+        font-size: 4.2rem;
+    }
+    header hgroup{
+        top: 15%;
+    }
+    
+    .arrow{
+        width: 96px;
+        height: 96px;
+        font-size: 7rem;
+    }
+       
+#html5{
+    height:230px;
+    float: left;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#js{
+    height: 200px;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+   margin: 0% 3%;
+}
+
+#css3{
+    height: 200px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#boot{
+    height: 200px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#jq{
+    height: 100px;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#sass{
+    height: 180px;
+    left: auto;
+     margin: 0% 14%;
+    
+} 
+.box{
+    padding: 0px;
+    margin: 7%;
+    width: 230px;
+    height: 230px;
+    height: 230px;
+ }
+    .box2{
+    padding: px;
+    margin: 0% 6%;
+    width: 230px;
+    height: 230px;
+ }
+
+
+main article#autor section{
+    position: absolute;
+    bottom: 17%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main article#autor section h3{
+    font-size: 7rem;
+}
+
+main article#autor section p{
+    font-size: 4rem;
+    margin: 25px;
+}
+
+    article#tech section h3{
+    font-size: 7rem;
+    text-align: center;
+}
+    
+   article#prog section h3{
+    font-size: 7rem;
+    text-align: center;
+}
+ 
+    
+#cpp{
+    height: 180px;
+    float: left;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#java{
+    height: 150px;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#php{
+    height: 170px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#mysql{
+    height: 150px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#oracle{
+    height: 80px;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#python{
+    height: 90px;
+    left: auto;
+    margin: 0% 14%;
+    
+} 
+    
+}
+
+/*
+
+@media (min-width: 1024px)and(orientation: portrait){
+
+}
+*/
+
+@media (min-width: 1280px){
+header img{
+        height: 70%;
+        right: -10%;
+    } 
+main article#autor img{
+    height: 45vh; 
+    top: 2%;
+}
+
+main article#autor section p{
+    font-size: 3rem;
+    margin: 10px;
+ }
+main article#autor section{
+   position: absolute;
+   bottom: 15%; 
+}
+
+main article#autor section h3{
+    margin-top: 30px;
+    font-size: 6rem;
+}
+
+    .arrow{
+        width: 64px;
+        height: 64px;
+        font-size: 6rem;
+    }
+ #html5{
+    height:150px;
+    float: left;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+    
+}
+
+#js{
+    height: 130px;
+    position: absolute;
+    left: auto;
+    transform: translateX(0%);
+    margin-left: 7%;
+}
+
+#css3{
+    height: 130px;
+    left: auto;
+    transform: translateX(0%);
+    margin-left: 9%;
+}
+
+#boot{
+    height: 130px;
+    left: auto;
+    transform: translateX(0%);
+}
+
+#jq{
+    height:60px;
+    left: auto;
+    transform: translateX(0%);
+    margin: 0% 3%;
+}
+
+#sass{
+    height: 120px;
+    left: auto;
+} 
+.box{
+    padding-top: 0px;
+    padding-left: 50px;
+ }
+    .box2{
+    margin: % 6%;
+
+ }
+    .container, .container2{
+        margin-bottom: 120px;
+    }
+    
+    .container3, .container4{
+        margin-bottom: 120px;
+    }
+}
+
+
+
+@media (min-width: 1600px){
+    header img{
+        height: 70%;
+        right: 8%;
+    } 
+     header h1{
+        font-size: 9rem;
+    }
+    header h3{
+        font-size: 5.2rem;
+    }
+    
+main article#autor img{
+    height: 45vh; 
+    top: 2%;
+}
+
+main article#autor section p{
+    font-size: 2.5rem;
+    margin: 10px;
+ }
+main article#autor section{
+   position: absolute;
+   bottom: 15%; 
+}
+
+main article#autor section h3{
+    margin-top: 40px;
+    font-size: 5rem;
+}
+
+}
+
+@media (min-width: 1600px)and(orientation: portrait){
+ header img{
+        height: 70%;
+        right: 20%;
+    }
+}
+
+@media (max-width: 339px){
+    
+    header h3{
+        font-size: 2.3rem;
+    }
+    header h1{
+        font-size: 3.1rem;
+    }
+    header hgroup{
+        transform: rotate(-15deg);
+    }
+    main article#autor section h3{
+    font-size: 2.4rem;
+    top: -15px;
+    position: relative;
+}
+
+main article#autor section p{
+    font-size: 1.8rem;
+    margin: 10px;
+    top: -10px;
+    position: relative;
+ }
+    main article#autor img{
+    height: 35vh; 
+ }
+    
+    
+#html5{
+    height: 70px;
+}
+
+#js{
+    height: 60px;
+}
+
+#css3{
+    height: 60px;
+}
+
+#boot{
+    height: 60px;
+}
+
+#jq{
+    height: 25px;
+}
+
+#sass{
+    height: 50px;
+    bottom: 5%;
+}
+
+.box{
+   width: 80px;
+   height: 80px;
+}
+    #cpp{
+    height: 60px;
+}
+
+#java{
+    height: 50px;
+}
+
+#php{
+    height: 70px;
+}
+
+#mysql{
+    height: 60px;
+}
+
+#oracle{
+    height: 30px;
+    margin-top: 20px;
+}
+
+#python{
+    height: 40px;
+    margin-top: 0px;
+}
+
+    
+}
+/* koniec queries */
+
+/* animacje css */
+@-webkit-keyframes arrow {
+    0%{
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+    }
+    50%{
+       -webkit-transform: translateY(0px);
+       transform: translateY(0px) 
+    }
+    100%{
+       -webkit-transform: translateY(80px);
+       transform: translateY(80px) 
+    }
+}
+@keyframes arrow {
+    0%{
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+    }
+    50%{
+       -webkit-transform: translateY(0px);
+       transform: translateY(0px) 
+    }
+    100%{
+       -webkit-transform: translateY(80px);
+       transform: translateY(80px) 
+    }
+}
